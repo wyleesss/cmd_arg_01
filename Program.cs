@@ -10,7 +10,7 @@ class Program
                 && Double.TryParse(args[2], out result)
                 && "+-/xх".Contains(args[1]); //укр-англ х
         }
-        catch(IndexOutOfRangeException)
+        catch(Exception)
         {
             return false;
         }
